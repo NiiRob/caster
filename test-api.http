@@ -1,0 +1,28 @@
+POST https://localhost:44364/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "@dm1n@pp"
+}
+
+###
+
+POST https://localhost:44364/api/customers
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6WyJSb2xlLkRlbGV0ZSIsIlVzZXIuUmVhZCIsIlJvbGUuUmVhZCIsIlJvbGUuVXBkYXRlIiwiRGFzaGJvYXJkIiwiUmVwb3J0IiwiUm9sZS5DcmVhdGUiLCJVc2VyLkNyZWF0ZSIsIkFkbWluaXN0cmF0aW9uIiwiTWVzc2FnZVBvcnRhbCIsIlVzZXIuRGVsZXRlIiwiVXNlci5VcGRhdGUiLCJTZXR0aW5nIl0sInVzZXJuYW1lIjoiQWRtaW4iLCJwcm9maWxlIjoiQWRtaW5pc3RyYXRvciIsImVtYWlsIjoiaW5mb0BhcHAuY29tIiwicGhvbmVOdW1iZXIiOiIwMDAwMDAwMDAwIiwiZnVsbE5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicGljdHVyZSI6IiIsImV4cCI6MTU5MTQ4MDcyMiwiaXNzIjoiY2FzdGVyLmRldm5lc3RzeXN0ZW1zLmNvbSIsImF1ZCI6ImNhc3Rlci5kZXZuZXN0c3lzdGVtcy5jb20ifQ.fx2dq5cnzWeDdSog1i16XRslvigudNI-70rn0fOWu8I
+
+ {
+   "name": "Michael Eshun",
+   "phoneNumber": "0557144981",
+   "location": "Bortinaor",
+   "shopName": "Fair Lady",
+   "email": "email@email.com"
+ }
+
+
+###
+
+GET https://localhost:44364/api/customers
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6WyJSb2xlLkRlbGV0ZSIsIlVzZXIuUmVhZCIsIlJvbGUuUmVhZCIsIlJvbGUuVXBkYXRlIiwiRGFzaGJvYXJkIiwiUmVwb3J0IiwiUm9sZS5DcmVhdGUiLCJVc2VyLkNyZWF0ZSIsIkFkbWluaXN0cmF0aW9uIiwiTWVzc2FnZVBvcnRhbCIsIlVzZXIuRGVsZXRlIiwiVXNlci5VcGRhdGUiLCJTZXR0aW5nIl0sInVzZXJuYW1lIjoiQWRtaW4iLCJwcm9maWxlIjoiQWRtaW5pc3RyYXRvciIsImVtYWlsIjoiaW5mb0BhcHAuY29tIiwicGhvbmVOdW1iZXIiOiIwMDAwMDAwMDAwIiwiZnVsbE5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicGljdHVyZSI6IiIsImV4cCI6MTU5MTQ4MDcyMiwiaXNzIjoiY2FzdGVyLmRldm5lc3RzeXN0ZW1zLmNvbSIsImF1ZCI6ImNhc3Rlci5kZXZuZXN0c3lzdGVtcy5jb20ifQ.fx2dq5cnzWeDdSog1i16XRslvigudNI-70rn0fOWu8I

@@ -1,0 +1,31 @@
+<ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#fff" type = "square-jelly-box" [fullScreen] = "true"><p style="color: white" > Loading... </p></ngx-spinner>
+<div class="vertical-center w-100">
+  <div class="row justify-content-center">
+    <div class="col-10 col-sm-10 col-md-9 col-lg-8">
+      <h5 class="font-weight-bold">Caster.io</h5>
+      <h3 class="pt-4">
+        <a routerLink="/auth/login" class="no-deco">
+          <span>Login</span>
+        </a>
+        <a routerLink="/auth/register" class="no-deco ml-4">
+          <span class="signUp text-muted">Sign up</span>
+        </a>
+      </h3>
+      <div class="pt-3">
+        <p class="error-message" *ngIf="errorMsg">{{errorMsg}}</p>
+        <form [formGroup]="loginForm" (ngSubmit)="signIn(loginForm.value)">
+          <div class="form-label-group">
+            <input type="text" id="username" class="form-control" placeholder="Username" formControlName="username">
+            <label for="username">Username</label>
+          </div>
+          <div class="form-label-group">
+            <input type="password" id="password" class="form-control" placeholder="Password" formControlName="password">
+            <label for="password">Password</label>
+          </div>
+          <button type="submit" class="btn bg-main btn-block btn-lg" [disabled]="!loginForm.valid">Login</button>
+          <p class="text-muted pt-3">Don't have an account? <a routerLink="/auth/register">Register here.</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
